@@ -1,0 +1,19 @@
+# Python
+app/.venv/
+__pycache__/
+*.pyc
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Credentials / keys
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.vscode/
