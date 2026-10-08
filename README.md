@@ -1,15 +1,19 @@
-# Spark — AWS EKS DevOps & GitOps Deployment
+# Spark:   AWS EKS DevOps & GitOps Deployment
 
-A cloud-native deployment project demonstrating how to containerize a Python Flask web application, provision AWS infrastructure with Terraform, deploy to Amazon EKS, configure Kubernetes autoscaling, and automate deployments using Jenkins and GitHub Actions with Argo CD.
+**A production-inspired cloud engineering project featuring automated infrastructure provisioning, container orchestration, CI/CD, Kubernetes autoscaling, and GitOps deployment on AWS.**
+
+Spark is a Flask-based dating application deployed to Amazon EKS using Docker, Terraform, and Helm.
+
+The project demonstrates two deployment strategies:
+
+- **Jenkins CI/CD:** Automated Docker builds, Amazon ECR image publishing, and Helm deployments to EKS.
+- **GitHub Actions + Argo CD:** Commit-based image versioning, automated GitOps updates, and continuous synchronization with Kubernetes.
+
+**Project outcome:** Successfully provisioned AWS infrastructure, deployed a publicly accessible containerized application, implemented Kubernetes autoscaling configuration, and validated both CI/CD pipelines.
+
+**Current status:** Project completed and validated. AWS infrastructure has been intentionally decommissioned to avoid ongoing cloud costs. The repository preserves the infrastructure code and deployment configuration for future recreation.loud-native deployment project demonstrating how to containerize a Python Flask web application, provision AWS infrastructure with Terraform, deploy to Amazon EKS, configure Kubernetes autoscaling, and automate deployments using Jenkins and GitHub Actions with Argo CD.
 
 ## Project Overview
-
-**Spark** is a fictional dating application landing page built with Python Flask. The application is deployed as a Docker container on Amazon Elastic Kubernetes Service (EKS), with an AWS Application Load Balancer providing public access.
-
-The project implements two CI/CD approaches:
-
-1. **Jenkins CI/CD:** Build a Docker image, push it to Amazon ECR, and deploy it to EKS using Helm.
-2. **GitHub Actions + Argo CD GitOps:** Build and push a versioned image, update the GitOps branch, and automatically synchronize the Kubernetes deployment through Argo CD.
 
 ## Technology Stack
 
